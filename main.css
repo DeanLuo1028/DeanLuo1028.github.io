@@ -1,10 +1,66 @@
-h1 {
-  color: black;
-  text-align: center;
-  font-family: Arial, sans-serif;
+:root { --radius: 14px; }
+body {
+  font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Noto Sans TC", Arial, "Microsoft JhengHei", "PingFang TC", sans-serif;
+  background: #f6f7fb;
+  margin: 0; padding: 32px;
+  display: grid; place-items: center; min-height: 100vh;
 }
-p {
-  color: yellow;
-  text-align: left;
-  font-family: Arial, sans-serif;
+.card {
+  width: min(640px, 92vw);
+  background: #fff;
+  border-radius: var(--radius);
+  box-shadow: 0 10px 30px rgba(0,0,0,.08);
+  padding: 24px 24px 28px;
 }
+h1 { font-size: 22px; margin: 0 0 16px; }
+p.hint { margin: 0 0 20px; color: #666; font-size: 14px; }
+.row {
+  display: grid;
+  grid-template-columns: 1fr 1fr auto;
+  gap: 12px;
+  align-items: center;
+  margin-bottom: 14px;
+}
+input[type="text"] {
+  height: 44px; padding: 0 12px;
+  border: 1px solid #e4e6ef; border-radius: 12px;
+  font-size: 16px; outline: none; transition: box-shadow .15s, border-color .15s;
+  background: #fafbff;
+}
+input[type="text"]:focus {
+  border-color: #7c9cff;
+  box-shadow: 0 0 0 4px rgba(124,156,255,.15);
+  background: #fff;
+}
+button {
+  height: 44px; min-width: 120px;
+  padding: 0 16px; border: none; border-radius: 12px;
+  background: #4f7cff; color: #fff; font-weight: 600; font-size: 15px;
+  cursor: pointer; transition: transform .04s ease, filter .15s ease, box-shadow .15s;
+  box-shadow: 0 8px 18px rgba(79,124,255,.25);
+}
+button:hover { filter: brightness(1.05); }
+button:active { transform: translateY(1px); }
+.result {
+  margin-top: 14px;
+  padding: 14px 16px;
+  border: 1px dashed #dfe3f0;
+  border-radius: 12px;
+  background: #fbfcff;
+  font-size: 16px;
+}
+.muted { color: #6b7280; }
+.error {
+  color: #b42318;
+  background: #fff4f3;
+  border-color: #ffd1cc;
+}
+.ok {
+  color: #0b6b2b;
+  background: #effcf3;
+  border-color: #b8f1cc;
+}
+.footer {
+  margin-top: 10px; font-size: 12px; color: #888; text-align: right;
+}
+.small { font-size: 12px; color: #6b7280; }

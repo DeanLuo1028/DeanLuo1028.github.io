@@ -1,15 +1,27 @@
 <!DOCTYPE html>
 <html lang="zh-TW">
 <head>
-  <meta charset="UTF-8">
-  <meta name="my website" content="width=device-width; initial-scale=1.0; maximum-scale=1.0;">
-  <link rel="stylesheet" href="main.css">
-  <title>My Website</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>加法小工具</title>
+  <link rel="stylesheet" href="main.css" />
 </head>
 <body>
+  <div class="card">
+    <h1>加法小工具</h1>
+    <p class="hint">輸入兩個數字，按「計算」或直接按 Enter。</p>
 
-  <h1>Welcome to My Website</h1>
-  <p>Welcome to the My Website Project</p>
+    <div class="row">
+      <input id="a" type="text" inputmode="decimal" placeholder="第一個數字（可用 3.5 或 3,5）" />
+      <input id="b" type="text" inputmode="decimal" placeholder="第二個數字（可用 4.2 或 4,2）" />
+      <button id="btn">計算</button>
+    </div>
+    <div id="msg" class="result muted">結果會顯示在這裡</div>
+
+    <div class="footer small">Tip：也支援小數點與逗號（, 會自動轉成 .）</div>
+  </div>
+
+  <script src="code.js"></script>
 
 </body>
 </html>
