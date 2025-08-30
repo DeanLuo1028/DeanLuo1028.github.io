@@ -8,15 +8,18 @@
 </head>
 <body>
   <div class="card">
-    <h1>加法小工具</h1>
+    <h1>計算小工具</h1>
     <p class="hint">輸入兩個數字，按「計算」或直接按 Enter。</p>
 
     <div class="row">
-      <input id="a" type="text" inputmode="decimal" placeholder="第一個數字（可用 3.5 或 3,5）" />
-      <input id="b" type="text" inputmode="decimal" placeholder="第二個數字（可用 4.2 或 4,2）" />
+      <input id="a" type="text" inputmode="decimal" placeholder="第一個數字" />
+      <input id="b" type="text" inputmode="decimal" placeholder="第二個數字" />
       <button id="btn">計算</button>
     </div>
-    <div id="msg" class="result muted">結果會顯示在這裡</div>
+    <div id="addResult" class="result muted">加法結果會顯示在這裡</div>
+    <div id="subResult" class="result muted">減法結果會顯示在這裡</div>
+    <div id="mulResult" class="result muted">乘法結果會顯示在這裡</div>
+    <div id="divResult" class="result muted">除法結果會顯示在這裡</div>
 
     <div class="footer small">Tip：也支援小數點與逗號（, 會自動轉成 .）</div>
   </div>
