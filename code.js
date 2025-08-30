@@ -2,7 +2,6 @@
 const $ = (s) => document.querySelector(s);
 const aEl = $('#a');
 const bEl = $('#b');
-const btn = $('#btn');
 const addResult = $('#addResult');
 const subResult = $('#subResult');
 const mulResult = $('#mulResult');
@@ -46,6 +45,8 @@ function showOk(a, b, sum, difference, product, quotient) {
 }
 
 function calc() {
+  if (aEl.value == "" || bEl.value == "") return;
+
   const a = parseNumber(aEl.value);
   const b = parseNumber(bEl.value);
 
@@ -69,12 +70,7 @@ function calc() {
 }
 
 // 事件綁定
-btn.addEventListener('click', calc);
-[aEl, bEl].forEach(el => {
-  el.addEventListener('keydown', (e) => {
-if (e.key === 'Enter') calc();
-  });
-});
+[aEl, bEl].forEach(el => el.addEventListener('input', calc));
 
 // 方便測試：自動聚焦到第一個輸入框
 aEl.focus();

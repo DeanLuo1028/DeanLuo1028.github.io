@@ -16,7 +16,7 @@ h1 { font-size: 22px; margin: 0 0 16px; }
 p.hint { margin: 0 0 20px; color: #666; font-size: 14px; }
 .row {
   display: grid;
-  grid-template-columns: 1fr 1fr auto;
+  grid-template-columns: 1fr 1fr;
   gap: 12px;
   align-items: center;
   margin-bottom: 14px;
@@ -32,15 +32,6 @@ input[type="text"]:focus {
   box-shadow: 0 0 0 4px rgba(124,156,255,.15);
   background: #fff;
 }
-button {
-  height: 44px; min-width: 120px;
-  padding: 0 16px; border: none; border-radius: 12px;
-  background: #4f7cff; color: #fff; font-weight: 600; font-size: 15px;
-  cursor: pointer; transition: transform .04s ease, filter .15s ease, box-shadow .15s;
-  box-shadow: 0 8px 18px rgba(79,124,255,.25);
-}
-button:hover { filter: brightness(1.05); }
-button:active { transform: translateY(1px); }
 .result {
   margin-top: 14px;
   padding: 14px 16px;
