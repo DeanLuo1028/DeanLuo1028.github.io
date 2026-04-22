@@ -1,29 +1,61 @@
 <!DOCTYPE html>
-<html lang="zh-TW">
+<html lang="zh-Hant">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>計算小工具</title>
-  <link rel="stylesheet" href="main.css" />
+  <meta charset="UTF-8">
+  <title>我的自我介紹</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="card">
-    <h1>計算小工具</h1>
-    <p class="hint">輸入兩個數字，就會自動計算四則運算的結果。</p>
 
-    <div class="row">
-      <input id="a" type="text" inputmode="decimal" placeholder="第一個數字" />
-      <input id="b" type="text" inputmode="decimal" placeholder="第二個數字" />
-    </div>
-    <div id="addResult" class="result muted">加法結果會顯示在這裡</div>
-    <div id="subResult" class="result muted">減法結果會顯示在這裡</div>
-    <div id="mulResult" class="result muted">乘法結果會顯示在這裡</div>
-    <div id="divResult" class="result muted">除法結果會顯示在這裡</div>
+  <header>
+    <h1>我叫羅檠得</h1>
+    <p>一個正在學寫網頁的高中生<br>我把我的程式都放到</p>
+    <a href="https://github.com/DeanLuo1028">我的 GitHub 上</a>
+  </header>
 
-    <div class="footer small">Tip：也支援小數點與逗號（, 會自動轉成 .）</div>
-  </div>
+  <main>
+    <section class="card">
+      <h2>👤 關於我</h2>
+      <p>
+        我目前是高中生，正在學習 HTML、CSS 和 JavaScript。
+        這個網站是我自己做來練習的。
+      </p>
+    </section>
 
-  <script src="code.js"></script>
+    <section class="card">
+      <h2>📚 我的學習歷程</h2>
+      <ul>
+        <li>
+          <p>高一選修課時學了 Arduino 與 C語言</p>
+          <img src="img/Arduino循跡車.jpg" alt="Arduino循跡車" title="我做的Arduino循跡車(雖然最後沒能順利動起來)"
+              width="300" height="400">
+        </li>
+        <li><a href="https://github.com/DeanLuo1028/PY_Minesweeper">自主學習-踩地雷</a></li>
+        <li><a href="https://github.com/DeanLuo1028/PY_SumGame">SumGame</a></li>
+        <li>
+          <p>多次參加APCS，最後取得觀念四級、實作三級的成績</p>
+          <img src="img/兩個APCS.png" alt="APCS成績證明" title="那個實作一級純屬失誤"
+          width="500">
+        </li>
+        <li>
+          <p>參加校內競賽榮獲第一名，雖然在日後的中投區複賽中未得名</p>
+          <img src="img/兩張獎狀.png" alt="獎狀和成績證明" tilte="中投區複賽實在太難了..."
+          width="500">
+        </li>
+      </ul>
+    </section>
 
+    <section class="card">
+      <h2>⭐ 小互動</h2>
+      <p id="message">按下面的按鈕看看會發生什麼事</p>
+      <button onclick="changeText()">點我</button>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2026 羅檠得</p>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
