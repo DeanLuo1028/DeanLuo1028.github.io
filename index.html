@@ -26,12 +26,20 @@
       <h2>📚 我的學習歷程</h2>
       <ul>
         <li>
-          <p>高一選修課時學了 Arduino 與 C語言</p>
+          <p>高一選修課時學了 Arduino 與 C 語言</p>
           <img src="img/Arduino循跡車.jpg" alt="Arduino循跡車" title="我做的Arduino循跡車(雖然最後沒能順利動起來)"
-              width="300" height="400">
+              width="300">
         </li>
-        <li><a href="https://github.com/DeanLuo1028/PY_Minesweeper">自主學習-踩地雷</a></li>
-        <li><a href="https://github.com/DeanLuo1028/PY_SumGame">SumGame</a></li>
+        <li>
+          <a href="https://github.com/DeanLuo1028/PY_Minesweeper">自主學習-踩地雷</a><br>
+          <img src="img/踩地雷.png" alt="踩地雷圖片" title="我用Python Tkinter 自己做的遊戲！"
+              width="400">
+        </li>
+        <li>
+          <a href="https://github.com/DeanLuo1028/PY_SumGame">SumGame</a><br>
+          <img src="img/SumGame.png" alt="SumGame圖片" title="做遊戲很開心於是我又做了這個"
+              width="400">
+        </li>
         <li>
           <p>多次參加APCS，最後取得觀念四級、實作三級的成績</p>
           <img src="img/兩個APCS.png" alt="APCS成績證明" title="那個實作一級純屬失誤"
@@ -42,13 +50,22 @@
           <img src="img/兩張獎狀.png" alt="獎狀和成績證明" tilte="中投區複賽實在太難了..."
           width="500">
         </li>
+        <li>
+          <p>參加2026中興資工營</p>
+          <img src="img/中興資工營.jpg" alt="中興資工營照片" title="應該多拍點照片的"
+          width="500">
+        </li>
       </ul>
     </section>
 
     <section class="card">
-      <h2>⭐ 小互動</h2>
-      <p id="message">按下面的按鈕看看會發生什麼事</p>
-      <button onclick="changeText()">點我</button>
+      <h2>⭐ 小遊戲</h2>
+      <p id="prompt">請猜一個0~100間的整數（不包括0和100）</p>
+      <label for="input_guess_number">輸入你猜的數字：</label>
+      <input type="number" id="input_guess_number" min="0" max="100">
+      <button id="submit_guess_number" type="button">確定</button>
+      <br>
+      <p id="counter">你猜了 0 次</p>
     </section>
   </main>
 
